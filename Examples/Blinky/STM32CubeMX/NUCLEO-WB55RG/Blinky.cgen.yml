@@ -1,0 +1,44 @@
+generator-import:
+  for-device: STM32WB55RGVx
+  for-board: NUCLEO-WB55RG
+  define:
+    - USE_HAL_DRIVER
+    - STM32WB55xx
+  add-path:
+    - ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Inc
+    - ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Inc/Legacy
+    - ./STM32CubeMX/Drivers/CMSIS/Device/ST/STM32WBxx/Include
+    - ./STM32CubeMX/Inc
+    - ./MX_Device
+  groups:
+    - group: CubeMX
+      files:
+        - file: ./STM32CubeMX/Src/main.c
+        - file: ./STM32CubeMX/Src/stm32wbxx_it.c
+        - file: ./STM32CubeMX/Src/stm32wbxx_hal_msp.c
+        - file: ./STM32CubeMX/Src/stm32wbxx_hal_timebase_tim.c
+        - file: ./STM32CubeMX/MDK-ARM/startup_stm32wb55xx_cm4.s
+        - file: ./STM32CubeMX/Src/system_stm32wbxx.c
+    - group: STM32 HAL Driver
+      files:
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_rcc.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c
+        - file: ./STM32CubeMX/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c
