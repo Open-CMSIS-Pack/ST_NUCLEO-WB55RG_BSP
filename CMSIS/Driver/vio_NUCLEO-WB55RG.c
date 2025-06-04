@@ -23,7 +23,7 @@
  * limitations under the License.
  */
 
-/*! \page vio_B-L462E-CELL1 Physical I/O Mapping
+/*! \page vio_NUCLEO-WB55RG Physical I/O Mapping
 
 The table below lists the physical I/O mapping of this CMSIS-Driver VIO implementation.
 
