@@ -14,7 +14,7 @@
   </licenseSets>
 
   <releases>
-    <release version="1.0.2-dev">
+    <release version="1.0.1-dev">
       Active development ...
       Blinky project:
       - specify thread names using thread attributes
