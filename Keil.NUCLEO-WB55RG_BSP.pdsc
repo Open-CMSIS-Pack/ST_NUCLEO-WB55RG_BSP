@@ -21,6 +21,7 @@
       - rename thread IDs
       - modify app_main_thread (replace loop forever)
       - add DWARF-5 debug information
+      - add generated output files
     </release>
   </releases>
 
